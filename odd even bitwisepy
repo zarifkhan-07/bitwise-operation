@@ -1,0 +1,10 @@
+def nofb(n):
+    c=0
+    while (n):
+        c +=1
+        n >>=1
+    return c
+
+n=int(input("Enter the number:"))
+
+print("Number of bits:",nofb(n))
