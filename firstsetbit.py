@@ -1,10 +1,9 @@
 def nofb(n):
-    while(n):
-        if (n&1==1):
-            print("There is a number")
-        else:
-            print("Ther is no number")
-        n>>=1
+    if (n & 1)== 0:
+        print("Set")
+    else:
+        print("Not set")
 
-n=int(input("Enter the num:"))
+        
+n = int(input("Enter a number: "))
 nofb(n)
